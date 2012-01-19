@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Display">
+        <Preference android:title="Color" android:key="clock_color" android:summary="The color of the clock"/>
+        <com.quanturium.blackclock.SeekBarPreference android:key="clock_size"
+        android:title="Size"
+        android:summary="The size of the clock"
+        android:defaultValue="75"
+        android:max="100"
+        />        
+        <com.quanturium.blackclock.SeekBarPreference android:key="clock_opacity"
+        android:title="Opacity"
+        android:summary="The opacity of the clock"
+        android:defaultValue="40"
+        android:max="100"
+        />        
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Battery Saving">
+        <CheckBoxPreference android:key="airplane_mode" android:title="Airplane mode" android:summary="Activate airplane mode while in foreground"/>
+       
+    </PreferenceCategory>
+
+    
+
+</PreferenceScreen>
